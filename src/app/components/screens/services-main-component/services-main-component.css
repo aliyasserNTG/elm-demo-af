@@ -1,8 +1,2 @@
 /* Service main */
 .service-main{}
-.btn-start-service{padding:12px 28px;background:var(--green);color:var(--white);border-radius:var(--radius);font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;flex-shrink:0}
-.btn-start-service:hover{background:var(--green-dark)}
-
-.service-desc-text{font-size:14px;color:var(--gray-600);margin-bottom:8px;line-height:1.7}
-.service-sla-link{font-size:13px;color:var(--green);display:flex;align-items:center;gap:4px;cursor:pointer;margin-bottom:24px}
-.service-sla-link svg{width:14px;height:14px}
