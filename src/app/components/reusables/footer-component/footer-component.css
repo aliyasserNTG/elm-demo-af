@@ -1,0 +1,59 @@
+.footer-container {
+  background-color: #074D31; /* Corrected Background per instruction */
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  direction: rtl;
+  color: #FFFFFF;
+}
+
+.footer-heading {
+  /* Group Label */
+  font-size: 16px;
+  font-weight: 500px;
+  line-height: 24px;
+  margin: 16px;
+  leading-trim: NONE;
+  letter-spacing: 0%;
+  text-align: right;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list li {
+  margin-bottom: 12px;
+}
+
+.footer-list a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.social-svg-group a {
+  color: #FFFFFF;
+  transition: opacity 0.2s ease;
+}
+
+.social-svg-group a:hover {
+  opacity: 0.7;
+}
+
+.border-top-light {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Opacity helpers for metadata hierarchy */
+.op-60 { opacity: 0.6; }
+.op-50 { opacity: 0.5; }
+
+::ng-deep .p-button-white-outline {
+  color: #FFFFFF !important;
+  border-color: #FFFFFF !important;
+  font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+}

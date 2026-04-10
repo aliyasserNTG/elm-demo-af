@@ -1,0 +1,15 @@
+.services-section{background:var(--gray-50);padding:48px 0;border-bottom:1px solid var(--gray-200)}
+.services-scroll{display:flex;gap:16px;overflow-x:auto;padding:0 24px;scrollbar-width:none}
+.services-scroll::-webkit-scrollbar{display:none}
+
+
+/* Carousel nav */
+.carousel-nav{display:flex;align-items:center;gap:8px;margin-top:16px;padding:0 24px}
+.carousel-dots{display:flex;gap:6px}
+.c-dot{width:8px;height:8px;border-radius:50%;background:var(--gray-300);cursor:pointer}
+.c-dot.active{background:var(--green)}
+.carousel-arrows{margin-right:auto;display:flex;gap:8px}
+.c-arrow{width:36px;height:36px;border:1px solid var(--gray-300);border-radius:50%;background:var(--white);display:flex;align-items:center;justify-content:center;cursor:pointer}
+.c-arrow:hover{background:var(--green);border-color:var(--green)}
+.c-arrow:hover svg{color:var(--white)}
+.c-arrow svg{width:16px;height:16px;color:var(--gray-500)}

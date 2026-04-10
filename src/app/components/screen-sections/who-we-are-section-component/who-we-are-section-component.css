@@ -1,0 +1,13 @@
+.who-section{background:var(--white);padding:48px 24px;border-bottom:1px solid var(--gray-200)}
+.who-inner{max-width:1200px;margin:0 auto}
+.who-header{display:flex;align-items:flex-start;justify-content:space-between;gap:32px;margin-bottom:40px}
+.who-content{flex:1}
+.who-title{font-size:24px;font-weight:700}
+.who-desc{font-size:14px;color:var(--gray-500);margin-top:8px}
+.secondary-action{padding:8px 20px;border:1px solid var(--gray-300);border-radius:var(--radius);font-size:13px;color:var(--gray-600);background:var(--white);cursor:pointer;align-self:flex-start}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:32px}
+.stat-item{text-align:center}
+.stat-icon{width:40px;height:40px;margin:0 auto 12px;background:var(--green-light);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.stat-icon svg{width:20px;height:20px;color:var(--green)}
+.stat-num{font-size:32px;font-weight:700;color:var(--green);line-height:1}
+.stat-label{font-size:13px;color:var(--gray-500);margin-top:4px}

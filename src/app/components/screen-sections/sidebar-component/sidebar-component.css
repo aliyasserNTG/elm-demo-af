@@ -1,0 +1,18 @@
+/* Sidebar */
+.sidebar{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:24px;position:sticky;top:80px}
+.sidebar-row{margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--gray-100)}
+.sidebar-row:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0}
+.sidebar-label{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--gray-500);margin-bottom:6px}
+.sidebar-label svg{width:14px;height:14px}
+.sidebar-value{font-size:14px;color:var(--gray-700);font-weight:500}
+.sidebar-sub{font-size:12px;color:var(--gray-500);margin-top:2px}
+.payment-logos{display:flex;gap:8px;margin-top:8px}
+.pay-logo{padding:4px 10px;border:1px solid var(--gray-300);border-radius:var(--radius);font-size:12px;color:var(--gray-600);background:var(--white)}
+.sidebar-links{display:flex;flex-direction:column;gap:8px}
+.sidebar-link{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--green);cursor:pointer}
+.sidebar-link svg{width:14px;height:14px}
+.app-btns{display:flex;flex-direction:column;gap:8px}
+.app-btn{display:flex;align-items:center;gap:8px;padding:8px 12px;border:1px solid var(--gray-300);border-radius:var(--radius);font-size:12px;cursor:pointer;background:var(--white)}
+.app-btn:hover{background:var(--gray-50)}
+.app-btn-icon{width:28px;height:28px;background:var(--gray-800);border-radius:5px;display:flex;align-items:center;justify-content:center}
+.app-btn-icon svg{width:16px;height:16px;color:var(--white)}

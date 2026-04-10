@@ -1,0 +1,42 @@
+/* Partners */
+.partners-section{background:var(--gray-50);padding:40px 24px;border-bottom:1px solid var(--gray-200)}
+.partners-inner{max-width:1200px;margin:0 auto}
+.partners-scroll{
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+  padding:16px 0;
+  max-width: 1280px;
+  gap: 32px;
+  opacity: 1;
+  width: 1280px;
+  height: 100px;
+  justify-content: space-between;
+  angle: 0 deg;
+}
+.partners-scroll::-webkit-scrollbar {
+  display: none;
+}
+.partner-logo{
+  background-image:url('/assets/images/partners_logo.jpg');
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border-radius: var(--radius);
+  border: 1px solid var(--Border-border-neutral-primary, #D2D6DB);
+  background-position: center 30%; /* Moves logo to the upper third */
+  width: 98px;
+  height: 100px;
+  gap: 8px;
+  angle: 0 deg;
+  opacity: 1;
+  padding-top: 5px;
+  padding-right: 4px;
+  padding-bottom: 5px;
+  padding-left: 4px;
+  border-width: 1px;
+  gap: 24px;
+  angle: 0 deg;
+  opacity: 1;
+
+}
+

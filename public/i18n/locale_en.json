@@ -1,0 +1,56 @@
+{
+  "app": {
+  "title": "Experimental Project for Elm site | Aly Farag"
+},
+  "header": {
+    "search": "Search",
+    "login": "Login",
+    "language": "العربية",
+    "tabs": {
+      "tab1": "Tab 1",
+      "tab2": "Tab 2",
+      "tab3": "Tab 3",
+      "tab4": "Tab 4",
+      "tab5": "Tab 5",
+      "tab6": "Tab 6"
+    }
+  },
+  "hero": {
+    "title": "Main Section",
+    "description": "Here you can add a brief description of the portal's purpose followed by a call-to-action button and an image or illustration on the left side.",
+    "primaryAction": "Primary Action"
+  },
+  "about": {
+    "title": "About Us Section",
+    "description": "Here you can add a brief description of the portal's purpose followed by a call-to-action button and an image or illustration on the left side.",
+    "stats": "People"
+  },
+  "services": {
+    "title": "Services Section",
+    "description": "Here you can add a brief description of the portal's purpose followed by a call-to-action button and an image or illustration on the left side.",
+    "viewAll": "View All",
+    "card": {
+      "title": "Card Title",
+      "subtitle": "Additional card content text",
+      "tag": "Tag",
+      "action": "Action",
+      "secondaryAction": "Secondary Action"
+    }
+  },
+  "news": {
+    "title": "News and Articles Section",
+    "description": "Here you can add a brief description of the portal's purpose.",
+    "cardTitle": "News card title in two lines",
+    "cardDescription": "Here you can include a brief description of the title in four lines.",
+    "readMore": "Read More",
+    "viewAll": "View All"
+  },
+  "partners": {
+    "title": "Partners Section",
+    "logoAlt": "Platform Logo",
+    "itemAlt": "Item Logo"
+  },
+  "footer": {
+    "lastModified": "Last updated: {{date}} - {{time}} KSA"
+  }
+}

@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --green:#1a7a4a;--green-dark:#0f5a34;--green-light:#e8f5ee;--green-mid:#2a9d5c;
+  --gray-50:#f8f9fa;--gray-100:#f1f3f4;--gray-200:#e2e6ea;--gray-300:#ced4da;
+  --gray-400:#adb5bd;--gray-500:#6c757d;--gray-600:#495057;--gray-700:#343a40;
+  --gray-800:#212529;--white:#ffffff;
+  --radius:8px;--radius-lg:12px;--shadow:0 2px 8px rgba(0,0,0,.08);
+  --nav-h:60px;
+}
+a{text-decoration:none;color:inherit}
+button{font-family:inherit;cursor:pointer;border:none;outline:none}
+input,select,textarea{font-family:inherit}
+
+:root{
+    direction: rtl;
+}
+html, body {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  background:var(--gray-50);
+  color:var(--gray-800);
+  font-size:15px;
+  line-height:1.6;
+  direction:rtl;
+}
+
+body {
+    font-weight: 400;
+}
+@media(max-width:900px){
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .news-grid{grid-template-columns:1fr}
+  .service-page-wrap,.form-page-wrap{grid-template-columns:1fr}
+  .sidebar{position:static}
+  .form-grid{grid-template-columns:1fr}
+  .footer-inner{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .hero-title{font-size:28px}
+  .hero{padding:48px 24px}
+  .footer-inner{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+}
+.page{display:block;min-height:calc(100vh - var(--nav-h))}
+.page.active{display:block}
+.page-helpful-bar{background:var(--gray-100);border-top:1px solid var(--gray-200);padding:16px 24px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.page-helpful-inner{max-width:1200px;margin:0 auto;width:100%;display:flex;align-items:center;gap:16px}
+.page-helpful-q{
+  font-size:14px;color:var(--gray-600);
+}
+.page-helpful-stat{font-size:13px;color:var(--gray-500);margin-right:auto}
+.ph-yes,.ph-no{padding:6px 20px;border-radius:var(--radius);font-size:14px;cursor:pointer;font-family:inherit}
+.ph-yes{background:var(--green);color:var(--white);border:none}
+.ph-no{background:var(--white);border:1px solid var(--gray-300);color:var(--gray-600)}
+.section{padding:48px 24px;max-width:1200px;margin:0 auto}
+.section-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px}
+.section-title{font-size:22px;font-weight:700;color:var(--gray-800)}
+.section-desc{font-size:14px;color:var(--gray-500);margin-top:4px;max-width:600px}
+.btn-show-all{padding:6px 16px;background:transparent;border:1px solid var(--green);color:var(--green);border-radius:var(--radius);font-size:14px;cursor:pointer}
+.btn-show-all:hover{background:var(--green-light)}

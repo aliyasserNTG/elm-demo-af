@@ -1,0 +1,176 @@
+<main id="page-form" class="page" role="main" aria-label="صفحة النموذج">
+  <div class="form-page-wrap">
+    <!-- Stepper -->
+    <aside aria-label="خطوات النموذج">
+      <nav class="breadcrumb" aria-label="مسار التنقل">
+        <a href="#" onclick="navigate('home');return false">رابط</a>
+        <span class="breadcrumb-sep" aria-hidden="true">›</span>
+        <a href="#" onclick="navigate('service');return false">رابط</a>
+      </nav>
+      <div class="stepper" role="list" aria-label="مراحل النموذج">
+        <div class="stepper-item done" role="listitem" id="step-1-indicator">
+          <div class="step-circle" aria-label="الخطوة الأولى - مكتملة">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="2,8 6,12 14,4"/></svg>
+          </div>
+          <div>
+            <div class="step-label">الخطوة الأولى</div>
+            <div class="step-desc">وصف الخطوة</div>
+          </div>
+        </div>
+        <div class="stepper-item active" role="listitem" id="step-2-indicator">
+          <div class="step-circle" aria-label="الخطوة الثانية - الحالية">2</div>
+          <div>
+            <div class="step-label">الخطوة الثانية</div>
+            <div class="step-desc">وصف الخطوة</div>
+          </div>
+        </div>
+        <div class="stepper-item" role="listitem" id="step-3-indicator">
+          <div class="step-circle" aria-label="الخطوة الثالثة - لم تبدأ">3</div>
+          <div>
+            <div class="step-label">الخطوة الثالثة</div>
+            <div class="step-desc">وصف الخطوة</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Form -->
+    <div>
+      <div class="form-main" role="form" aria-label="نموذج حقول النص">
+        <h1 class="form-section-title">حقول النص</h1>
+        <p class="form-section-subtitle">عند استخدام النماذج، فإن حقول النموذج القياسية المستخدمة عادةً لإدخال نص قصير في حقول النماذج هي: الافتراضي، النشط، المركز، الخطأ، التلميح، والمعطل.</p>
+        <p class="required-note" role="note" aria-label="ملاحظة الحقول المطلوبة">* المعلومات المطلوبة</p>
+
+        <div class="form-grid">
+          <!-- Row 1: Required + Optional basic -->
+          <div class="form-group">
+            <label class="form-label" for="field1">
+              إدخال النص الإلزامي <span class="req" aria-hidden="true">*</span>
+            </label>
+            <input class="form-input" type="text" id="field1" placeholder="نص تلميحي" required aria-required="true">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="field2">إدخال النص الاختياري</label>
+            <input class="form-input" type="text" id="field2" placeholder="نص تلميحي">
+          </div>
+
+          <!-- Row 2: With icon -->
+          <div class="form-group">
+            <label class="form-label" for="field3">
+              إدخال النص الإلزامي <span class="req" aria-hidden="true">*</span>
+            </label>
+            <div class="input-with-icon">
+              <span class="input-icon" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6.5" cy="6.5" r="4.5"/><path d="M9.5 9.5L13 13"/></svg></span>
+              <input class="form-input" type="text" id="field3" placeholder="نص تلميحي" required aria-required="true" style="padding-right:14px">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="field4">إدخال النص الاختياري</label>
+            <div class="input-with-icon">
+              <span class="input-icon" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6.5" cy="6.5" r="4.5"/><path d="M9.5 9.5L13 13"/></svg></span>
+              <input class="form-input" type="text" id="field4" placeholder="نص تلميحي" style="padding-right:14px">
+            </div>
+          </div>
+
+          <!-- Row 3: With suffix -->
+          <div class="form-group">
+            <label class="form-label" for="field5">
+              إدخال النص الإلزامي <span class="req" aria-hidden="true">*</span>
+            </label>
+            <div class="input-group-inline">
+              <input class="form-input" type="text" id="field5" placeholder="نص تلميحي" required aria-required="true">
+              <span class="input-suffix" aria-label="وحدة">نص</span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="field6">إدخال النص الاختياري</label>
+            <div class="input-group-inline">
+              <input class="form-input" type="text" id="field6" placeholder="نص تلميحي">
+              <span class="input-suffix" aria-label="وحدة">نص</span>
+            </div>
+          </div>
+
+          <!-- Row 4: With prefix text -->
+          <div class="form-group">
+            <label class="form-label" for="field7">
+              إدخال النص الإلزامي <span class="req" aria-hidden="true">*</span>
+            </label>
+            <div class="input-group-inline">
+              <span class="input-suffix">نص</span>
+              <input class="form-input" type="text" id="field7" placeholder="نص تلميحي" required aria-required="true" style="border-radius:0 var(--radius) var(--radius) 0;border-right:none">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="field8">إدخال النص الاختياري</label>
+            <div class="input-group-inline">
+              <span class="input-suffix">نص</span>
+              <input class="form-input" type="text" id="field8" placeholder="نص تلميحي" style="border-radius:0 var(--radius) var(--radius) 0;border-right:none">
+            </div>
+          </div>
+
+          <!-- Row 5: With help text -->
+          <div class="form-group">
+            <label class="form-label" for="field9">
+              إدخال النص الإلزامي <span class="req" aria-hidden="true">*</span>
+            </label>
+            <input class="form-input" type="text" id="field9" placeholder="نص تلميحي" required aria-required="true" aria-describedby="help9">
+            <span class="help-text" id="help9" role="note">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5" fill="none"/><text x="8" y="12" text-anchor="middle" font-size="9" fill="currentColor">i</text></svg>
+              نص مساعد
+            </span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="field10">إدخال النص الاختياري</label>
+            <input class="form-input" type="text" id="field10" placeholder="نص تلميحي" aria-describedby="help10">
+            <span class="help-text" id="help10" role="note">
+              <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><circle cx="8" cy="8" r="7" stroke="currentColor" stroke-width="1.5" fill="none"/><text x="8" y="12" text-anchor="middle" font-size="9" fill="currentColor">i</text></svg>
+              نص مساعد
+            </span>
+          </div>
+
+          <!-- Row 6: Error state -->
+          <div class="form-group">
+            <label class="form-label" for="field11">
+              إدخال النص الإلزامي <span class="req" aria-hidden="true">*</span>
+            </label>
+            <input class="form-input error" type="text" id="field11" placeholder="نص تلميحي" required aria-required="true" aria-invalid="true" aria-describedby="err11">
+            <span class="error-text" id="err11" role="alert">
+              <svg viewBox="0 0 16 16" fill="#dc3545" aria-hidden="true"><circle cx="8" cy="8" r="7"/><path d="M8 5v4M8 11v1" stroke="white" stroke-width="1.5" fill="none"/></svg>
+              نص مساعد
+            </span>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="field12">إدخال النص الاختياري</label>
+            <input class="form-input error" type="text" id="field12" placeholder="نص تلميحي" aria-invalid="true" aria-describedby="err12">
+            <span class="error-text" id="err12" role="alert">
+              <svg viewBox="0 0 16 16" fill="#dc3545" aria-hidden="true"><circle cx="8" cy="8" r="7"/><path d="M8 5v4M8 11v1" stroke="white" stroke-width="1.5" fill="none"/></svg>
+              نص مساعد
+            </span>
+          </div>
+
+          <!-- Row 7: Full-width disabled -->
+          <div class="form-group full">
+            <label class="form-label" for="field13">
+              إدخال النص الإلزامي <span class="req" aria-hidden="true">*</span>
+            </label>
+            <input class="form-input" type="text" id="field13" placeholder="نص تلميحي" required aria-required="true" style="background:var(--gray-100);color:var(--gray-400)" disabled aria-disabled="true">
+          </div>
+        </div>
+
+        <!-- Actions -->
+        <div class="form-actions" role="group" aria-label="إجراءات النموذج">
+          <button class="btn-back" onclick="navigate('service')" aria-label="الرجوع إلى صفحة الخدمة" type="button">رجوع</button>
+          <button class="btn-next" type="submit" aria-label="الانتقال إلى الخطوة التالية" onclick="handleNext(event)">التالي</button>
+        </div>
+      </div>
+
+      <!-- Page helpful -->
+      <div class="feedback-bar" style="margin-top:16px;border-radius:var(--radius-lg)" role="region" aria-label="تقييم الصفحة">
+        <span class="feedback-question">هل كانت هذه الصفحة مفيدة؟</span>
+        <span class="feedback-stat">60% من المستخدمين قالوا نعم من 2843 تعليقاً</span>
+        <button class="ph-yes" aria-label="نعم، الصفحة مفيدة">نعم</button>
+        <button class="ph-no" aria-label="لا، الصفحة غير مفيدة">لا</button>
+      </div>
+    </div>
+  </div>
+</main>
