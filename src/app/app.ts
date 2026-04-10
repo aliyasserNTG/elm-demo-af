@@ -1,7 +1,7 @@
-import { Component, signal, inject } from '@angular/core';
-import { RouterOutlet, RouterLink } from '@angular/router';
-import { HeaderComponent } from './components/reusables/header-component/header-component';
-import { FooterComponent } from './components/reusables/footer-component/footer-component';
+import { Component} from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from '@components/reusables/header-component/header-component';
+import { FooterComponent } from '@components/reusables/footer-component/footer-component';
 
 // import {
 //     TranslateService,
@@ -12,7 +12,7 @@ import { FooterComponent } from './components/reusables/footer-component/footer-
 // import translationsEN from '../../public/i18n/locale_en.json';
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, HeaderComponent, FooterComponent],
+  imports: [RouterOutlet, HeaderComponent, FooterComponent],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

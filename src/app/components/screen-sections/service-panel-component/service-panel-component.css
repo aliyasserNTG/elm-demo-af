@@ -1,0 +1,18 @@
+/* Video placeholder */
+.video-placeholder{background:var(--gray-800);border-radius:var(--radius-lg);height:260px;display:flex;align-items:center;justify-content:center;margin-bottom:28px;position:relative;overflow:hidden;cursor:pointer}
+.play-btn{width:60px;height:60px;background:var(--green);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.play-btn svg{width:28px;height:28px;color:var(--white);margin-right:-3px}
+
+/* Steps */
+.steps-list{display:flex;flex-direction:column;gap:12px}
+.step-item{display:flex;align-items:flex-start;gap:12px;padding:12px;background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius)}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--green);color:var(--white);font-size:13px;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-variant-numeric:tabular-nums}
+.step-text{font-size:14px;color:var(--gray-700);line-height:1.5;padding-top:3px}
+
+/* Rating */
+.service-rating-bar{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:1px solid var(--gray-200);margin-top:32px}
+.rating-stars{display:flex;gap:3px}
+.star{width:18px;height:18px;color:#f4b942}
+.star.empty{color:var(--gray-300)}
+.rating-num{font-size:14px;font-weight:600}
+.rating-count{font-size:13px;color:var(--gray-500)}

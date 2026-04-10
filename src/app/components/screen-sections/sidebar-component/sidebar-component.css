@@ -16,3 +16,5 @@
 .app-btn:hover{background:var(--gray-50)}
 .app-btn-icon{width:28px;height:28px;background:var(--gray-800);border-radius:5px;display:flex;align-items:center;justify-content:center}
 .app-btn-icon svg{width:16px;height:16px;color:var(--white)}
+.btn-start-service{padding:12px 28px;background:var(--green);color:var(--white);border-radius:var(--radius);font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;flex-shrink:0}
+.btn-start-service:hover{background:var(--green-dark)}

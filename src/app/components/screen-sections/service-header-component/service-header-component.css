@@ -1,0 +1,7 @@
+.service-header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;margin-bottom:20px}
+.service-title-h1{font-size:28px;font-weight:700;color:var(--gray-800)}
+.service-tags-row{display:flex;gap:8px;margin-top:8px;flex-wrap:wrap}
+.service-badge{padding:4px 12px;border-radius:100px;font-size:12px;font-weight:500}
+.badge-blue{background:#e3f0fb;color:#1565c0}
+.badge-teal{background:#e1f5ee;color:#0f5a34}
+.badge-gray{background:var(--gray-100);color:var(--gray-600)}

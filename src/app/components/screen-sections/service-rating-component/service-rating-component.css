@@ -1,0 +1,7 @@
+/* Rating */
+.service-rating-bar{display:flex;align-items:center;gap:12px;padding:16px 0;border-top:1px solid var(--gray-200);margin-top:32px}
+.rating-stars{display:flex;gap:3px}
+.star{width:18px;height:18px;color:#f4b942}
+.star.empty{color:var(--gray-300)}
+.rating-num{font-size:14px;font-weight:600}
+.rating-count{font-size:13px;color:var(--gray-500)}

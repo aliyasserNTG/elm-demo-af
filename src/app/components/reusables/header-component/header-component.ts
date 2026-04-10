@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { MenuItem } from 'primeng/api';
+import {RouterLink} from '@angular/router';
 @Component({
   selector: 'app-header-component',
-  imports: [CommonModule, MenubarModule, ButtonModule, InputTextModule],
+  imports: [CommonModule, MenubarModule, ButtonModule, InputTextModule, RouterLink, NgOptimizedImage],
   templateUrl: './header-component.html',
   styleUrl: './header-component.css',
 })
