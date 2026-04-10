@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {RouterLink} from '@angular/router';
 import {ServiceTabsComponent} from '@components/reusables/service-tabs-component/service-tabs-component';
 import {ServicePanelComponent} from '@components/screen-sections/service-panel-component/service-panel-component';
 import {
@@ -9,10 +8,11 @@ import {ServiceHeaderComponent} from '@components/screen-sections/service-header
 import {
   ServiceFeedbackBarComponent
 } from '@components/screen-sections/service-feedback-bar-component/service-feedback-bar-component';
+import {StartServiceComponent} from '@components/screen-sections/start-service-component/start-service-component';
 
 @Component({
   selector: 'app-services-main-component',
-  imports: [RouterLink, ServiceTabsComponent, ServicePanelComponent, ServiceRatingComponent, ServiceHeaderComponent, ServiceFeedbackBarComponent],
+  imports: [ServiceTabsComponent, ServicePanelComponent, ServiceRatingComponent, ServiceHeaderComponent, ServiceFeedbackBarComponent, StartServiceComponent],
   templateUrl: './services-main-component.html',
   styleUrl: './services-main-component.css',
 })
