@@ -86,3 +86,5 @@ a:focus-visible {
   outline: 2px solid var(--green);
   outline-offset: 2px;
 }
+.services-scroll{display:flex;gap:16px;overflow-x:auto;padding:0 24px;scrollbar-width:none;max-width:1200px;margin:0 auto}
+.services-scroll::-webkit-scrollbar{display:none}

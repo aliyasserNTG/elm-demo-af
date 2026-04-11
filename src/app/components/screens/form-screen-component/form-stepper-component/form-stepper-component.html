@@ -2,11 +2,14 @@
 <aside aria-label="خطوات النموذج">
   <nav class="breadcrumb" aria-label="مسار التنقل">
     <ol class="breadcrumb-list">
-      <li class="breadcrumb-item"><a routerLink="/">الصفحة الرئيسية</a></li>
-      <li class="breadcrumb-item"><a routerLink="/services">الخدمة</a></li>
-      <li class="breadcrumb-item" aria-current="page">النموذج</li>
+      <li class="breadcrumb-item" style="list-style-type: none"><a routerLink="/">الصفحة الرئيسية</a></li>
+      <li class="breadcrumb-item" style="list-style-type: none"><a routerLink="/services">الخدمة</a></li>
+      <li class="breadcrumb-item" style="list-style-type: none" aria-current="page">النموذج</li>
     </ol>
   </nav>
+  <a href="#" onclick="navigate('home');return false">رابط</a>
+  <span class="breadcrumb-sep" aria-hidden="true">›</span>
+  <a href="#" onclick="navigate('service');return false">رابط</a>
 
   <ol class="stepper" aria-label="مراحل النموذج">
     <!-- Step 1: complete -->

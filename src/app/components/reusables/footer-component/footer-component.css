@@ -1,7 +1,6 @@
 .footer-container {
-  background-color: #074D31; /* Corrected Background per instruction */
+  background-color: #074D31;
   font-family: 'IBM Plex Sans Arabic', sans-serif;
-  direction: rtl;
   color: #FFFFFF;
 }
 

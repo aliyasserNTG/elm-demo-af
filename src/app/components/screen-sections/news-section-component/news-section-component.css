@@ -8,7 +8,6 @@
   gap: 20px;
   padding: 20px;
   justify-content: center;
-  direction: rtl; /* Ensures right-to-left flow */
 }
 .news-card{
   display: flex;
@@ -16,11 +15,10 @@
   background: #ffffff;
   border: 1px solid var(--Border-border-neutral-primary, #D2D6DB);
   border-radius: 16px;
-  padding: 12px; /* Inner padding seen in the image */
+  padding: 12px;
   width: 100%;
   max-width: 380px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-  direction: rtl; /* Ensures RTL alignment */
   box-sizing: border-box;
 
 }
