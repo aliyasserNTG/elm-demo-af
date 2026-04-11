@@ -1,37 +1,57 @@
-<header role="banner">
-  <nav class="navbar" aria-label="التنقل الرئيسي">
-    <div class="navbar-brand">
-      <div id="elm-logo">
-        <img ngSrc="/assets/images/elm-logo-color.png" width="100" height="50" alt="elm-logo"/>
-      </div>
+<header role="banner" class="elm-header">
+  <nav class="elm-navbar d-flex align-items-center w-100" aria-label="التنقل الرئيسي">
+
+    <!-- Logo — far right in RTL -->
+    <a routerLink="/" class="navbar-brand d-flex align-items-center flex-shrink-0 me-3" aria-label="الصفحة الرئيسية -Minister">
+      <img ngSrc="/assets/images/elm-logo-color.png" width="72" height="36" alt="شعارMinister"/>
+    </a>
+
+    <!-- Navigation tabs -->
+    <div class="nav-tabs d-flex align-items-center flex-grow-1 border-0" role="menubar" aria-label="قائمة التنقل">
+      <a routerLink="/" class="nav-tab d-inline-flex align-items-center gap-1" role="menuitem" tabindex="0">
+        توبيت 1 <i class="pi pi-chevron-down nav-chevron" aria-hidden="true"></i>
+      </a>
+      <a routerLink="/services" class="nav-tab d-inline-flex align-items-center gap-1" role="menuitem" tabindex="0">
+        توبيت 2 <i class="pi pi-chevron-down nav-chevron" aria-hidden="true"></i>
+      </a>
+      <a routerLink="/form" class="nav-tab d-inline-flex align-items-center gap-1" role="menuitem" tabindex="0">
+        توبيت 3 <i class="pi pi-chevron-down nav-chevron" aria-hidden="true"></i>
+      </a>
+      <button type="button" class="nav-tab d-inline-flex align-items-center gap-1" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label="توبيت 4">
+        توبيت 4 <i class="pi pi-chevron-down nav-chevron" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="nav-tab d-inline-flex align-items-center gap-1" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label="توبيت 5">
+        توبيت 5 <i class="pi pi-chevron-down nav-chevron" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="nav-tab d-inline-flex align-items-center gap-1" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label="توبيت 6">
+        توبيت 6 <i class="pi pi-chevron-down nav-chevron" aria-hidden="true"></i>
+      </button>
+      <button type="button" class="nav-tab d-inline-flex align-items-center gap-1" role="menuitem" aria-haspopup="true" aria-expanded="false" aria-label="توبيت 7">
+        توبيت 7 <i class="pi pi-chevron-down nav-chevron" aria-hidden="true"></i>
+      </button>
     </div>
 
-    <div class="nav-tabs" role="menubar">
-      <a routerLink="/"><button class="nav-tab" role="menuitem" aria-haspopup="true" onclick="navigate('home')" aria-label="توبيت 1">
-        الصفحة الرئيسية
-        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg>
-      </button></a>
-      <a routerLink="/services"><button class="nav-tab" role="menuitem" aria-haspopup="true"> الخدمات <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></button></a>
-      <a routerLink="/form"><button class="nav-tab" role="menuitem" aria-haspopup="true"> النماذج <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></button></a>
-      <button class="nav-tab" role="menuitem" aria-haspopup="true">توبيت 4 <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></button>
-      <button class="nav-tab" role="menuitem" aria-haspopup="true">توبيت 5 <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></button>
-      <button class="nav-tab" role="menuitem" aria-haspopup="true">توبيت 6 <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></button>
-      <button class="nav-tab" role="menuitem" aria-haspopup="true">توبيت 7 <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M4 6l4 4 4-4"/></svg></button>
-    </div>
+    <!-- Action buttons — far left in RTL -->
+    <div class="nav-actions d-flex align-items-center gap-1 flex-shrink-0" role="group" aria-label="إجراءات المستخدم">
 
-    <div class="nav-actions">
-      <button class="nav-search" aria-label="البحث">
-        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6.5" cy="6.5" r="4.5"/><path d="M9.5 9.5L13 13"/></svg>
-        البحث
+      <!-- Search -->
+      <button type="button" class="nav-action-btn d-inline-flex align-items-center gap-2" aria-label="البحث">
+        <img ngSrc="/assets/images/language-icon" alt=""/>
+        <span>البحث</span>
       </button>
-      <button class="nav-btn-lang" aria-label="التبديل إلى الإنجليزية">
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" style="display:inline;vertical-align:middle;margin-left:4px"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zm0 1.5a5.5 5.5 0 110 11 5.5 5.5 0 010-11z"/></svg>
-        English
+
+      <!-- Language switcher -->
+      <button type="button" class="nav-action-btn nav-btn-lang d-inline-flex align-items-center gap-2" (click)="toggleLanguage()" aria-label="التبديل إلى اللغة الأخرى">
+        <i class="pi pi-language" aria-hidden="true"></i>
+        <span>@if (currentLang() === 'ar') { English } @else { العربية }</span>
       </button>
-      <button class="nav-btn-login" aria-label="تسجيل الدخول">
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 8a3 3 0 100-6 3 3 0 000 6zm-5 6a5 5 0 0110 0H3z"/></svg>
-        تسجيل الدخول
+
+      <!-- Login -->
+      <button type="button" class="nav-action-btn nav-btn-login d-inline-flex align-items-center gap-2" aria-label="تسجيل الدخول">
+        <i class="pi pi-user" aria-hidden="true"></i>
+        <span>تسجيل الدخول</span>
       </button>
+
     </div>
   </nav>
 </header>

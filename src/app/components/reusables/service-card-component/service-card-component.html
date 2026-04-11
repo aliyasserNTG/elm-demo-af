@@ -1,17 +1,16 @@
-<div class="service-card" role="listitem" tabindex="0" onclick="navigate('service')" onkeydown="if(event.key==='Enter')navigate('service')" aria-label="خدمة عنوان البطاقة">
-  <div class="service-card-check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="2,8 6,12 14,4"/></svg></div>
-  <h3 class="service-card-title">عنوان البطاقة</h3>
+<article class="service-card" aria-labelledby="card-title">
+  <div class="service-card-check" aria-hidden="true">
+    <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" focusable="false"><polyline points="2,8 6,12 14,4"/></svg>
+  </div>
+  <h3 class="service-card-title" id="card-title">عنوان البطاقة</h3>
   <p class="service-card-desc">نص إضافي لمحتوى البطاقة</p>
-  <div class="service-tags">
-    @for(tag of tags; track tag.label)
-    {
-      <span class="service-tag" [style.borderColor]="tag.color" [style.color]="tag.color">{{tag.label}}</span>
-
+  <div class="service-tags" role="list" aria-label="تصنيفات الخدمة">
+    @for(tag of tags; track tag.label) {
+      <span class="service-tag" role="listitem" [style.borderColor]="tag.color" [style.color]="tag.color">{{tag.label}}</span>
     }
-
   </div>
-  <div class="service-card-actions">
-    <a routerLink="services"><button class="btn-action-primary">إجراء</button></a>
-    <button class="btn-action-secondary" onclick="event.stopPropagation()">إجراء ثانوي</button>
+  <div class="service-card-actions" role="group" aria-label="إجراءات البطاقة">
+    <a routerLink="/services" class="btn-action-primary">إجراء</a>
+    <button type="button" class="btn-action-secondary">إجراء ثانوي</button>
   </div>
-</div>
+</article>

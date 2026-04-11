@@ -1,5 +1,6 @@
 .services-section{background:var(--gray-50);padding:48px 0;border-bottom:1px solid var(--gray-200)}
-.services-scroll{display:flex;gap:16px;overflow-x:auto;padding:0 24px;scrollbar-width:none}
+.section-inner{max-width:1200px;margin:0 auto;padding:0 24px}
+.services-scroll{display:flex;gap:16px;overflow-x:auto;padding:0 24px;scrollbar-width:none;max-width:1200px;margin:0 auto}
 .services-scroll::-webkit-scrollbar{display:none}
 
 

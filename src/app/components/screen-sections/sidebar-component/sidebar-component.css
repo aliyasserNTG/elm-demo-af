@@ -18,3 +18,11 @@
 .app-btn-icon svg{width:16px;height:16px;color:var(--white)}
 .btn-start-service{padding:12px 28px;background:var(--green);color:var(--white);border-radius:var(--radius);font-size:15px;font-weight:600;cursor:pointer;white-space:nowrap;flex-shrink:0}
 .btn-start-service:hover{background:var(--green-dark)}
+
+/* Focus styles for keyboard navigation */
+.btn-start-service:focus-visible,
+.app-btn:focus-visible,
+.sidebar-link:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}

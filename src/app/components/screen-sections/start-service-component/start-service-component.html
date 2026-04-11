@@ -1,10 +1,11 @@
-<a routerLink="/form">
-  <button class="btn-start-service" aria-label="بدء الخدمة">بدء الخدمة</button>
-</a>
+<!-- Single <a routerLink> — no <button> nested inside <a> -->
+<a routerLink="/form" class="btn-start-service" role="button" aria-label="بدء الخدمة الآن">بدء الخدمة</a>
+
 <p class="service-desc-text">مثال على وصف الخدمة لشراء قطعة أرض لبناء منزلك، يتطلب ذلك توثيق عملية البيع والشراء في
   مكاتب التوثيق أو خدمات كاتب العدل لتسجيل العقار باسمك.</p>
-<a class="service-sla-link" href="#" aria-label="اتفاقية مستوى الخدمة">
-  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+
+<a class="service-sla-link" href="#" aria-label="عرض اتفاقية مستوى الخدمة (يفتح في نافذة جديدة)" target="_blank" rel="noopener noreferrer">
+  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
     <path d="M13 7V2H8M13 2L7 8M6 3H3a1 1 0 00-1 1v9a1 1 0 001 1h9a1 1 0 001-1v-3"/>
   </svg>
   اتفاقية مستوى الخدمة

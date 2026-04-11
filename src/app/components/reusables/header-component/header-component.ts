@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import {CommonModule, NgOptimizedImage} from '@angular/common';
+import { Component, OnInit, inject, PLATFORM_ID } from '@angular/core';
+import {CommonModule, NgOptimizedImage, isPlatformBrowser} from '@angular/common';
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
 import { MenuItem } from 'primeng/api';
 import {RouterLink} from '@angular/router';
+import { currentLanguage, setLanguage, updateDirection, initLanguage, type Language } from '../../../services/language.service';
 @Component({
   selector: 'app-header-component',
   imports: [CommonModule, MenubarModule, ButtonModule, InputTextModule, RouterLink, NgOptimizedImage],
@@ -12,12 +13,22 @@ import {RouterLink} from '@angular/router';
   styleUrl: './header-component.css',
 })
 export class HeaderComponent implements OnInit{
+  private platformId = inject(PLATFORM_ID);
+  currentLang = currentLanguage;
+  items: MenuItem[] | undefined;
 
-items: MenuItem[] | undefined;
-ngOnInit(): void {
-  //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-  //Add 'implements OnInit' to the class.
-  this.items = [
+  toggleLanguage() {
+    const newLang: Language = this.currentLang() === 'ar' ? 'en' : 'ar';
+    setLanguage(newLang, this.platformId);
+  }
+
+  ngOnInit() {
+    // Initialize language direction on first load
+    if (isPlatformBrowser(this.platformId)) {
+      initLanguage();
+    }
+
+    this.items = [
       { label: 'تبويب 1' },
       { label: 'تبويب 2' },
       { label: 'تبويب 3' },
@@ -26,5 +37,5 @@ ngOnInit(): void {
       { label: 'تبويب 6' },
       { label: 'تبويب 7' }
     ];
-}
+  }
 }

@@ -13,19 +13,19 @@
        <app-service-card-component [id]="num"/>
      }
     </div>
-    <div class="carousel-nav" aria-label="تنقل الخدمات">
-      <div class="carousel-dots">
-        <div class="c-dot active" aria-label="صفحة 1"></div>
-        <div class="c-dot" aria-label="صفحة 2"></div>
-        <div class="c-dot" aria-label="صفحة 3"></div>
-        <div class="c-dot" aria-label="صفحة 4"></div>
+    <div class="carousel-nav" role="group" aria-label="تنقل الخدمات">
+      <div class="carousel-dots" role="tablist" aria-label="صفحات الخدمات">
+        <button class="c-dot active" role="tab" aria-selected="true"  aria-label="الانتقال إلى صفحة 1" tabindex="0"></button>
+        <button class="c-dot"        role="tab" aria-selected="false" aria-label="الانتقال إلى صفحة 2" tabindex="-1"></button>
+        <button class="c-dot"        role="tab" aria-selected="false" aria-label="الانتقال إلى صفحة 3" tabindex="-1"></button>
+        <button class="c-dot"        role="tab" aria-selected="false" aria-label="الانتقال إلى صفحة 4" tabindex="-1"></button>
       </div>
       <div class="carousel-arrows">
-        <button class="c-arrow" aria-label="السابق">
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="10,4 6,8 10,12"/></svg>
+        <button class="c-arrow" aria-label="الخدمات السابقة" type="button">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><polyline points="10,4 6,8 10,12"/></svg>
         </button>
-        <button class="c-arrow" aria-label="التالي">
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,4 10,8 6,12"/></svg>
+        <button class="c-arrow" aria-label="الخدمات التالية" type="button">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><polyline points="6,4 10,8 6,12"/></svg>
         </button>
       </div>
     </div>

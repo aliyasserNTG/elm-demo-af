@@ -7,7 +7,7 @@
   --text-main: #161616;
   --text-muted: #666666;
   --border-color: #E5E7EB;
-  
+
   /* Layout Constraints from Figma */
   --canvas-width: 1440px;
   --header-height: 72px;
@@ -20,7 +20,7 @@ body {
   color: var(--text-main);
   margin: 0;
   padding: 0;
-  direction: rtl; /* For Arabic Layout */
+  /* direction handled by language service */
 }
 
 /* --- Layout Containers --- */
@@ -113,7 +113,7 @@ body {
     font-family: var(--primary-font);
     border-radius: 4px; /* Minimalist radius */
   }
-  
+
   .p-tag {
     font-family: var(--primary-font);
     background: #F3F4F6;

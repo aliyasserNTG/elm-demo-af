@@ -1,0 +1,41 @@
+<!-- Stepper -->
+<aside aria-label="خطوات النموذج">
+  <nav class="breadcrumb" aria-label="مسار التنقل">
+    <ol class="breadcrumb-list">
+      <li class="breadcrumb-item"><a routerLink="/">الصفحة الرئيسية</a></li>
+      <li class="breadcrumb-item"><a routerLink="/services">الخدمة</a></li>
+      <li class="breadcrumb-item" aria-current="page">النموذج</li>
+    </ol>
+  </nav>
+
+  <ol class="stepper" aria-label="مراحل النموذج">
+    <!-- Step 1: complete -->
+    <li class="stepper-item done" id="step-1-indicator" aria-label="الخطوة الأولى - مكتملة">
+      <div class="step-circle" aria-hidden="true">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.5" focusable="false">
+          <polyline points="2,8 6,12 14,4"/>
+        </svg>
+      </div>
+      <div>
+        <div class="step-label">الخطوة الأولى</div>
+        <div class="step-desc">وصف الخطوة</div>
+      </div>
+    </li>
+    <!-- Step 2: current — aria-current="step" -->
+    <li class="stepper-item active" id="step-2-indicator" aria-current="step" aria-label="الخطوة الثانية - الحالية">
+      <div class="step-circle" aria-hidden="true">2</div>
+      <div>
+        <div class="step-label">الخطوة الثانية</div>
+        <div class="step-desc">وصف الخطوة</div>
+      </div>
+    </li>
+    <!-- Step 3: upcoming -->
+    <li class="stepper-item" id="step-3-indicator" aria-label="الخطوة الثالثة - لم تبدأ بعد">
+      <div class="step-circle" aria-hidden="true">3</div>
+      <div>
+        <div class="step-label">الخطوة الثالثة</div>
+        <div class="step-desc">وصف الخطوة</div>
+      </div>
+    </li>
+  </ol>
+</aside>
